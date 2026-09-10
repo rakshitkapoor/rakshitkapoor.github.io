@@ -1,0 +1,14 @@
+---
+title: "My first weeks in MDS"
+author: "Rakshit Kapoor"
+date: 2026-09-10
+
+about:
+  template: jolla
+  image: ../../images/UBC_Rakshit.jpeg
+---
+Starting the Master of Data Science at UBC has been quite a change from what I was used to back home in India. Orientation was a great way to get introduced to the program, meet my cohort, and finally put faces to many of the people I had only known through emails and group chats. Moving to Vancouver and settling into a completely new environment made the first few days especially exciting.
+
+The first week of classes was definitely intense. What surprised me most was how quickly we moved from introductions into actually working with data and solving problems. Coming from a Computer Science background, I expected the technical side, but I was pleasantly surprised by how much emphasis there is on thinking about the data and the problem itself rather than simply applying a model.
+
+A few weeks in, I am still getting used to the pace, but I am enjoying it. There is a lot to learn, and being surrounded by people from different academic and professional backgrounds has already made the experience much more interesting. I am looking forward to seeing where the next few months take me.

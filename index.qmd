@@ -1,0 +1,8 @@
+---
+title: "Rakshit Kapoor"
+about:
+  template: jolla
+  image: images/Rakshit.jpeg
+---
+
+I’m Rakshit, originally from India, and I’ve recently moved to Vancouver to pursue the Master of Data Science at UBC. Before MDS, I worked with Interview Kickstart as a Technical Product Manager in the AI/ML space, where I worked on ML products, learner-facing initiatives, and large-scale AI applications. Outside work, I’ve also been involved in research and community building around technology and AI. Going forward, I’m hoping to deepen my skills in data science and AI, work on meaningful real-world problems, and explore opportunities.

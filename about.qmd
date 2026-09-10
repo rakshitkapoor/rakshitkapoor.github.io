@@ -1,0 +1,21 @@
+---
+title: "About"
+---
+
+## Background
+
+I grew up in India and studied Computer Science at Bennett University. During my undergraduate years, I gravitated towards the intersection of technology, AI, and building things that people could actually use. Alongside my coursework, I spent a lot of time working on machine learning projects, experimenting with different applications of AI, and getting involved in student communities.
+
+Before starting the MDS program, I worked at Interview Kickstart in the AI/ML space. My work there sat somewhere between technology, product development, and education, which gave me the chance to work with both technical problems and people. I particularly enjoyed working on AI-powered applications and figuring out how to turn fairly complex technical ideas into something useful and accessible.
+
+## Why data science
+
+My interest in data science grew from wanting to understand not just how models work, but how data can be used to make better decisions and solve problems in the real world. I have worked with machine learning and deep learning through projects and research, but I wanted a stronger foundation across statistics, data analysis, and the broader data science workflow.
+
+That is what brought me to UBC's Master of Data Science. I am particularly interested in the space where machine learning, AI, and practical problem-solving meet. I am hoping to use the program to become better at taking a problem from messy data all the way to a useful, well-reasoned solution.
+
+## Outside of data science
+
+Outside of work and academics, I enjoy being around people and building communities. During university, I was involved in running a student technology club, which meant organising workshops, bringing people together, and occasionally figuring out how to make ambitious ideas happen with very limited resources.
+
+I also enjoy exploring new places, trying different food, and finding good coffee spots. Now that I am in Vancouver, I am looking forward to doing a lot more of that, whether it is exploring the city, discovering new trails, or simply finding a favourite neighbourhood spot. I am also a big fan of conversations that have absolutely nothing to do with data science.
