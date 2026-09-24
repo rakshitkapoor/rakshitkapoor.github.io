@@ -47,5 +47,54 @@
     "title": "About",
     "section": "Outside of data science",
     "text": "Outside of data science\nOutside of work and academics, I enjoy being around people and building communities. During university, I was involved in running a student technology club, which meant organising workshops, bringing people together, and occasionally figuring out how to make ambitious ideas happen with very limited resources.\nI also enjoy exploring new places, trying different food, and finding good coffee spots. Now that I am in Vancouver, I am looking forward to doing a lot more of that, whether it is exploring the city, discovering new trails, or simply finding a favourite neighbourhood spot. I am also a big fan of conversations that have absolutely nothing to do with data science."
+  },
+  {
+    "objectID": "posts/penguin-python/index.html",
+    "href": "posts/penguin-python/index.html",
+    "title": "Exploring Penguin Size",
+    "section": "",
+    "text": "In this post, I explore the relationship between penguin body mass and flipper length across three penguin species: Adelie, Chinstrap, and Gentoo. I use Python to calculate summary statistics, visualize the relationship between measurements, and compare average body mass across species.\nThe data come from the Palmer Penguins dataset, collected by Dr. Kristen Gorman and the Palmer Station Antarctica LTER. The dataset is available through the palmerpenguins Python package."
+  },
+  {
+    "objectID": "posts/penguin-python/index.html#overview",
+    "href": "posts/penguin-python/index.html#overview",
+    "title": "Exploring Penguin Size",
+    "section": "",
+    "text": "In this post, I explore the relationship between penguin body mass and flipper length across three penguin species: Adelie, Chinstrap, and Gentoo. I use Python to calculate summary statistics, visualize the relationship between measurements, and compare average body mass across species.\nThe data come from the Palmer Penguins dataset, collected by Dr. Kristen Gorman and the Palmer Station Antarctica LTER. The dataset is available through the palmerpenguins Python package."
+  },
+  {
+    "objectID": "posts/penguin-python/index.html#load-and-explore-the-data",
+    "href": "posts/penguin-python/index.html#load-and-explore-the-data",
+    "title": "Exploring Penguin Size",
+    "section": "1. Load and explore the data",
+    "text": "1. Load and explore the data\nFirst, I import the necessary Python libraries and load the dataset. I inspect the first few observations to understand its structure.\n\nfrom palmerpenguins import load_penguins\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\npenguins = load_penguins()\n\nprint(\"Dataset dimensions:\", penguins.shape)\n\npenguins.head()\n\nDataset dimensions: (344, 8)\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007\n\n\n\n\n\n\n\nThe dataset contains measurements of penguins, including their species, body mass, flipper length, and bill dimensions."
+  },
+  {
+    "objectID": "posts/penguin-python/index.html#compare-penguin-size-by-species",
+    "href": "posts/penguin-python/index.html#compare-penguin-size-by-species",
+    "title": "Exploring Penguin Size",
+    "section": "2. Compare penguin size by species",
+    "text": "2. Compare penguin size by species\nNext, I calculate the average body mass and flipper length for each species. Missing measurements are excluded from the calculations.\n\nspecies_summary = (\n    penguins\n    .groupby(\"species\")[[\"body_mass_g\", \"flipper_length_mm\"]]\n    .mean()\n    .round(2)\n)\n\nspecies_summary\n\n\n\n\n\n\n\n\nbody_mass_g\nflipper_length_mm\n\n\nspecies\n\n\n\n\n\n\nAdelie\n3700.66\n189.95\n\n\nChinstrap\n3733.09\n195.82\n\n\nGentoo\n5076.02\n217.19\n\n\n\n\n\n\n\nThese summary statistics allow us to compare the typical body mass and flipper length of the three species."
+  },
+  {
+    "objectID": "posts/penguin-python/index.html#visualize-body-mass-and-flipper-length",
+    "href": "posts/penguin-python/index.html#visualize-body-mass-and-flipper-length",
+    "title": "Exploring Penguin Size",
+    "section": "3. Visualize body mass and flipper length",
+    "text": "3. Visualize body mass and flipper length\nI use a scatter plot to investigate the relationship between flipper length and body mass. Each species is represented separately to make comparisons easier.\n\nfig, ax = plt.subplots(figsize=(9, 6))\n\nfor species in penguins[\"species\"].dropna().unique():\n    subset = penguins[\n        penguins[\"species\"] == species\n    ]\n\n    ax.scatter(\n        subset[\"flipper_length_mm\"],\n        subset[\"body_mass_g\"],\n        label=species,\n        alpha=0.7\n    )\n\nax.set_xlabel(\"Flipper length (mm)\")\nax.set_ylabel(\"Body mass (g)\")\nax.set_title(\"Penguin Body Mass vs Flipper Length\")\nax.legend(title=\"Species\")\nax.grid(alpha=0.2)\n\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Relationship between flipper length and body mass across three penguin species.\n\n\n\n\n\nThe scatter plot illustrates a positive association between flipper length and body mass. Penguins with longer flippers generally have greater body mass, although the measurements vary within each species."
+  },
+  {
+    "objectID": "posts/penguin-python/index.html#identify-the-species-with-the-largest-average-body-mass",
+    "href": "posts/penguin-python/index.html#identify-the-species-with-the-largest-average-body-mass",
+    "title": "Exploring Penguin Size",
+    "section": "4. Identify the species with the largest average body mass",
+    "text": "4. Identify the species with the largest average body mass\nFinally, I use the summary statistics to identify which species has the largest average body mass.\n\nlargest_species = species_summary[\"body_mass_g\"].idxmax()\n\nlargest_mass = species_summary[\"body_mass_g\"].max()\n\nprint(\n    f\"{largest_species} has the largest average \"\n    f\"body mass: {largest_mass:.2f} g.\"\n)\n\nGentoo has the largest average body mass: 5076.02 g.\n\n\nThis calculation provides a direct comparison of average body mass across the three species."
+  },
+  {
+    "objectID": "posts/penguin-python/index.html#conclusion",
+    "href": "posts/penguin-python/index.html#conclusion",
+    "title": "Exploring Penguin Size",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe analysis demonstrates how Python can be used to explore and summarize biological measurements. The species-level statistics show differences in average body mass and flipper length, while the scatter plot reveals a positive relationship between these measurements.\nGentoo penguins have the largest average body mass among the three species in this dataset. The analysis also demonstrates how grouping, aggregation, and visualization can help identify patterns in real-world data."
   }
 ]

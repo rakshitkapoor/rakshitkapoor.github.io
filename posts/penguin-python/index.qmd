@@ -1,0 +1,109 @@
+
+---
+title: "Exploring Penguin Size"
+author: "Rakshit Kapoor"
+date: 2026-09-24
+categories: [Python, Data Analysis, Visualization]
+jupyter: python3
+---
+
+## Overview
+
+In this post, I explore the relationship between penguin body mass and flipper length across three penguin species: Adelie, Chinstrap, and Gentoo. I use Python to calculate summary statistics, visualize the relationship between measurements, and compare average body mass across species.
+
+The data come from the [Palmer Penguins dataset](https://allisonhorst.github.io/palmerpenguins/), collected by Dr. Kristen Gorman and the Palmer Station Antarctica LTER. The dataset is available through the `palmerpenguins` Python package.
+
+## 1. Load and explore the data
+
+First, I import the necessary Python libraries and load the dataset. I inspect the first few observations to understand its structure.
+
+```{python}
+#| warning: false
+
+from palmerpenguins import load_penguins
+import pandas as pd
+import matplotlib.pyplot as plt
+
+penguins = load_penguins()
+
+print("Dataset dimensions:", penguins.shape)
+
+penguins.head()
+```
+
+The dataset contains measurements of penguins, including their species, body mass, flipper length, and bill dimensions.
+
+## 2. Compare penguin size by species
+
+Next, I calculate the average body mass and flipper length for each species. Missing measurements are excluded from the calculations.
+
+```{python}
+species_summary = (
+    penguins
+    .groupby("species")[["body_mass_g", "flipper_length_mm"]]
+    .mean()
+    .round(2)
+)
+
+species_summary
+```
+
+These summary statistics allow us to compare the typical body mass and flipper length of the three species.
+
+## 3. Visualize body mass and flipper length
+
+I use a scatter plot to investigate the relationship between flipper length and body mass. Each species is represented separately to make comparisons easier.
+
+```{python}
+#| label: fig-penguin-size
+#| fig-cap: "Relationship between flipper length and body mass across three penguin species."
+#| warning: false
+
+fig, ax = plt.subplots(figsize=(9, 6))
+
+for species in penguins["species"].dropna().unique():
+    subset = penguins[
+        penguins["species"] == species
+    ]
+
+    ax.scatter(
+        subset["flipper_length_mm"],
+        subset["body_mass_g"],
+        label=species,
+        alpha=0.7
+    )
+
+ax.set_xlabel("Flipper length (mm)")
+ax.set_ylabel("Body mass (g)")
+ax.set_title("Penguin Body Mass vs Flipper Length")
+ax.legend(title="Species")
+ax.grid(alpha=0.2)
+
+plt.tight_layout()
+plt.show()
+```
+
+The scatter plot illustrates a positive association between flipper length and body mass. Penguins with longer flippers generally have greater body mass, although the measurements vary within each species.
+
+## 4. Identify the species with the largest average body mass
+
+Finally, I use the summary statistics to identify which species has the largest average body mass.
+
+```{python}
+largest_species = species_summary["body_mass_g"].idxmax()
+
+largest_mass = species_summary["body_mass_g"].max()
+
+print(
+    f"{largest_species} has the largest average "
+    f"body mass: {largest_mass:.2f} g."
+)
+```
+
+This calculation provides a direct comparison of average body mass across the three species.
+
+## Conclusion
+
+The analysis demonstrates how Python can be used to explore and summarize biological measurements. The species-level statistics show differences in average body mass and flipper length, while the scatter plot reveals a positive relationship between these measurements.
+
+Gentoo penguins have the largest average body mass among the three species in this dataset. The analysis also demonstrates how grouping, aggregation, and visualization can help identify patterns in real-world data.
