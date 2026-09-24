@@ -1,0 +1,97 @@
+
+---
+title: "Exploring Penguin Bill Measurements"
+author: "Rakshit Kapoor"
+date: 2026-09-24
+categories: [R, Data Analysis, Visualization]
+---
+
+## Overview
+
+In this post, I investigate how bill length and bill depth differ among Adelie, Chinstrap, and Gentoo penguins. Using R, I calculate summary statistics and create visualizations to explore differences between the three species.
+
+The data come from the [Palmer Penguins dataset](https://allisonhorst.github.io/palmerpenguins/), collected by Dr. Kristen Gorman and the Palmer Station Antarctica LTER.
+
+## 1. Load and explore the data
+
+First, I load the required R packages and inspect the dataset.
+
+```{r}
+#| message: false
+#| warning: false
+
+library(palmerpenguins)
+library(dplyr)
+library(ggplot2)
+
+penguins_data <- palmerpenguins::penguins
+
+head(penguins_data)
+```
+
+The dataset contains measurements of penguins from three species, including bill length, bill depth, flipper length, and body mass.
+
+## 2. Calculate summary statistics
+
+Next, I calculate the average bill length and bill depth for each species. I exclude missing measurements to avoid affecting the calculations.
+
+```{r}
+bill_summary <- penguins_data |>
+  group_by(species) |>
+  summarise(
+    avg_bill_length = mean(bill_length_mm, na.rm = TRUE),
+    avg_bill_depth = mean(bill_depth_mm, na.rm = TRUE),
+    count = n(),
+    .groups = "drop"
+  )
+
+bill_summary
+```
+
+These statistics allow us to compare the typical bill measurements across the three species.
+
+## 3. Visualize bill measurements
+
+I create a scatter plot to investigate the relationship between bill length and bill depth. Each species is represented by a different colour.
+
+```{r}
+#| label: fig-penguin-bills
+#| fig-cap: "Relationship between bill length and bill depth across three penguin species."
+#| warning: false
+
+penguins_data |>
+  ggplot(aes(
+    x = bill_length_mm,
+    y = bill_depth_mm,
+    colour = species
+  )) +
+  geom_point(alpha = 0.7, na.rm = TRUE) +
+  labs(
+    title = "Penguin Bill Length vs Bill Depth",
+    x = "Bill length (mm)",
+    y = "Bill depth (mm)",
+    colour = "Species"
+  ) +
+  theme_minimal()
+```
+
+The visualization helps identify differences in bill measurements between the species. It also shows how bill length and depth vary within each species.
+
+## 4. Compare average bill length
+
+Finally, I arrange the species by their average bill length to identify differences between them.
+
+```{r}
+bill_ranking <- bill_summary |>
+  arrange(desc(avg_bill_length))
+
+bill_ranking
+```
+
+The resulting table orders the three species by average bill length, making it easier to compare their measurements.
+
+## Conclusion
+
+This analysis demonstrates how R can be used to summarize and visualize biological measurements.
+
+The summary statistics and scatter plot reveal differences in bill morphology among the three penguin species. These differences illustrate how grouping, aggregation, and visualization can help explore patterns in real-world datasets.
