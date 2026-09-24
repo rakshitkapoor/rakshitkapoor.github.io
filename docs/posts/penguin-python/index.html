@@ -219,7 +219,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="load-and-explore-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="load-and-explore-the-data">1. Load and explore the data</h2>
 <p>First, I import the necessary Python libraries and load the dataset. I inspect the first few observations to understand its structure.</p>
-<div id="d89247c3" class="cell" data-execution_count="1">
+<div id="f1f40eb8" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> palmerpenguins <span class="im">import</span> load_penguins</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -317,7 +317,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="compare-penguin-size-by-species" class="level2">
 <h2 class="anchored" data-anchor-id="compare-penguin-size-by-species">2. Compare penguin size by species</h2>
 <p>Next, I calculate the average body mass and flipper length for each species. Missing measurements are excluded from the calculations.</p>
-<div id="fb2566b7" class="cell" data-execution_count="2">
+<div id="70034476" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>species_summary <span class="op">=</span> (</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    penguins</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    .groupby(<span class="st">"species"</span>)[[<span class="st">"body_mass_g"</span>, <span class="st">"flipper_length_mm"</span>]]</span>
@@ -411,7 +411,7 @@ Figure&nbsp;1: Relationship between flipper length and body mass across three pe
 <section id="identify-the-species-with-the-largest-average-body-mass" class="level2">
 <h2 class="anchored" data-anchor-id="identify-the-species-with-the-largest-average-body-mass">4. Identify the species with the largest average body mass</h2>
 <p>Finally, I use the summary statistics to identify which species has the largest average body mass.</p>
-<div id="2d39f666" class="cell" data-execution_count="4">
+<div id="ee3bc5bb" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>largest_species <span class="op">=</span> species_summary[<span class="st">"body_mass_g"</span>].idxmax()</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>largest_mass <span class="op">=</span> species_summary[<span class="st">"body_mass_g"</span>].<span class="bu">max</span>()</span>

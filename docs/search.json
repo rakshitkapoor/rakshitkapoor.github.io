@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nRakshit Kapoor\n\n\n\n\n\nNo matching items"
+    "text": "Exploring Penguin Size\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nRakshit Kapoor\n\n\n\n\n\n\n\n\n\n\n\n\nExploring Penguin Bill Measurements\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nRakshit Kapoor\n\n\n\n\n\n\n\n\n\n\n\n\nMy first weeks in MDS\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nRakshit Kapoor\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -12,41 +12,6 @@
     "title": "Rakshit Kapoor",
     "section": "",
     "text": "I’m Rakshit, originally from India, and I’ve recently moved to Vancouver to pursue the Master of Data Science at UBC. Before MDS, I worked with Interview Kickstart as a Technical Product Manager in the AI/ML space, where I worked on ML products, learner-facing initiatives, and large-scale AI applications. Outside work, I’ve also been involved in research and community building around technology and AI. Going forward, I’m hoping to deepen my skills in data science and AI, work on meaningful real-world problems, and explore opportunities."
-  },
-  {
-    "objectID": "posts/first-weeks/index.html",
-    "href": "posts/first-weeks/index.html",
-    "title": "My first weeks in MDS",
-    "section": "",
-    "text": "Starting the Master of Data Science at UBC has been quite a change from what I was used to back home in India. Orientation was a great way to get introduced to the program, meet my cohort, and finally put faces to many of the people I had only known through emails and group chats. Moving to Vancouver and settling into a completely new environment made the first few days especially exciting.\nThe first week of classes was definitely intense. What surprised me most was how quickly we moved from introductions into actually working with data and solving problems. Coming from a Computer Science background, I expected the technical side, but I was pleasantly surprised by how much emphasis there is on thinking about the data and the problem itself rather than simply applying a model.\nA few weeks in, I am still getting used to the pace, but I am enjoying it. There is a lot to learn, and being surrounded by people from different academic and professional backgrounds has already made the experience much more interesting. I am looking forward to seeing where the next few months take me."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I grew up in India and studied Computer Science at Bennett University. During my undergraduate years, I gravitated towards the intersection of technology, AI, and building things that people could actually use. Alongside my coursework, I spent a lot of time working on machine learning projects, experimenting with different applications of AI, and getting involved in student communities.\nBefore starting the MDS program, I worked at Interview Kickstart in the AI/ML space. My work there sat somewhere between technology, product development, and education, which gave me the chance to work with both technical problems and people. I particularly enjoyed working on AI-powered applications and figuring out how to turn fairly complex technical ideas into something useful and accessible."
-  },
-  {
-    "objectID": "about.html#background",
-    "href": "about.html#background",
-    "title": "About",
-    "section": "",
-    "text": "I grew up in India and studied Computer Science at Bennett University. During my undergraduate years, I gravitated towards the intersection of technology, AI, and building things that people could actually use. Alongside my coursework, I spent a lot of time working on machine learning projects, experimenting with different applications of AI, and getting involved in student communities.\nBefore starting the MDS program, I worked at Interview Kickstart in the AI/ML space. My work there sat somewhere between technology, product development, and education, which gave me the chance to work with both technical problems and people. I particularly enjoyed working on AI-powered applications and figuring out how to turn fairly complex technical ideas into something useful and accessible."
-  },
-  {
-    "objectID": "about.html#why-data-science",
-    "href": "about.html#why-data-science",
-    "title": "About",
-    "section": "Why data science",
-    "text": "Why data science\nMy interest in data science grew from wanting to understand not just how models work, but how data can be used to make better decisions and solve problems in the real world. I have worked with machine learning and deep learning through projects and research, but I wanted a stronger foundation across statistics, data analysis, and the broader data science workflow.\nThat is what brought me to UBC’s Master of Data Science. I am particularly interested in the space where machine learning, AI, and practical problem-solving meet. I am hoping to use the program to become better at taking a problem from messy data all the way to a useful, well-reasoned solution."
-  },
-  {
-    "objectID": "about.html#outside-of-data-science",
-    "href": "about.html#outside-of-data-science",
-    "title": "About",
-    "section": "Outside of data science",
-    "text": "Outside of data science\nOutside of work and academics, I enjoy being around people and building communities. During university, I was involved in running a student technology club, which meant organising workshops, bringing people together, and occasionally figuring out how to make ambitious ideas happen with very limited resources.\nI also enjoy exploring new places, trying different food, and finding good coffee spots. Now that I am in Vancouver, I am looking forward to doing a lot more of that, whether it is exploring the city, discovering new trails, or simply finding a favourite neighbourhood spot. I am also a big fan of conversations that have absolutely nothing to do with data science."
   },
   {
     "objectID": "posts/penguin-python/index.html",
@@ -96,5 +61,89 @@
     "title": "Exploring Penguin Size",
     "section": "Conclusion",
     "text": "Conclusion\nThe analysis demonstrates how Python can be used to explore and summarize biological measurements. The species-level statistics show differences in average body mass and flipper length, while the scatter plot reveals a positive relationship between these measurements.\nGentoo penguins have the largest average body mass among the three species in this dataset. The analysis also demonstrates how grouping, aggregation, and visualization can help identify patterns in real-world data."
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "Starting the Master of Data Science at UBC has been quite a change from what I was used to back home in India. Orientation was a great way to get introduced to the program, meet my cohort, and finally put faces to many of the people I had only known through emails and group chats. Moving to Vancouver and settling into a completely new environment made the first few days especially exciting.\nThe first week of classes was definitely intense. What surprised me most was how quickly we moved from introductions into actually working with data and solving problems. Coming from a Computer Science background, I expected the technical side, but I was pleasantly surprised by how much emphasis there is on thinking about the data and the problem itself rather than simply applying a model.\nA few weeks in, I am still getting used to the pace, but I am enjoying it. There is a lot to learn, and being surrounded by people from different academic and professional backgrounds has already made the experience much more interesting. I am looking forward to seeing where the next few months take me."
+  },
+  {
+    "objectID": "posts/penguin-r/index.html",
+    "href": "posts/penguin-r/index.html",
+    "title": "Exploring Penguin Bill Measurements",
+    "section": "",
+    "text": "In this post, I investigate how bill length and bill depth differ among Adelie, Chinstrap, and Gentoo penguins. Using R, I calculate summary statistics and create visualizations to explore differences between the three species.\nThe data come from the Palmer Penguins dataset, collected by Dr. Kristen Gorman and the Palmer Station Antarctica LTER."
+  },
+  {
+    "objectID": "posts/penguin-r/index.html#overview",
+    "href": "posts/penguin-r/index.html#overview",
+    "title": "Exploring Penguin Bill Measurements",
+    "section": "",
+    "text": "In this post, I investigate how bill length and bill depth differ among Adelie, Chinstrap, and Gentoo penguins. Using R, I calculate summary statistics and create visualizations to explore differences between the three species.\nThe data come from the Palmer Penguins dataset, collected by Dr. Kristen Gorman and the Palmer Station Antarctica LTER."
+  },
+  {
+    "objectID": "posts/penguin-r/index.html#load-and-explore-the-data",
+    "href": "posts/penguin-r/index.html#load-and-explore-the-data",
+    "title": "Exploring Penguin Bill Measurements",
+    "section": "1. Load and explore the data",
+    "text": "1. Load and explore the data\nFirst, I load the required R packages and inspect the dataset.\n\nlibrary(palmerpenguins)\nlibrary(dplyr)\nlibrary(ggplot2)\n\npenguins_data &lt;- palmerpenguins::penguins\n\nhead(penguins_data)\n\n# A tibble: 6 × 8\n  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g\n  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;\n1 Adelie  Torgersen           39.1          18.7               181        3750\n2 Adelie  Torgersen           39.5          17.4               186        3800\n3 Adelie  Torgersen           40.3          18                 195        3250\n4 Adelie  Torgersen           NA            NA                  NA          NA\n5 Adelie  Torgersen           36.7          19.3               193        3450\n6 Adelie  Torgersen           39.3          20.6               190        3650\n# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;\n\n\nThe dataset contains measurements of penguins from three species, including bill length, bill depth, flipper length, and body mass."
+  },
+  {
+    "objectID": "posts/penguin-r/index.html#calculate-summary-statistics",
+    "href": "posts/penguin-r/index.html#calculate-summary-statistics",
+    "title": "Exploring Penguin Bill Measurements",
+    "section": "2. Calculate summary statistics",
+    "text": "2. Calculate summary statistics\nNext, I calculate the average bill length and bill depth for each species. I exclude missing measurements to avoid affecting the calculations.\n\nbill_summary &lt;- penguins_data |&gt;\n  group_by(species) |&gt;\n  summarise(\n    avg_bill_length = mean(bill_length_mm, na.rm = TRUE),\n    avg_bill_depth = mean(bill_depth_mm, na.rm = TRUE),\n    count = n(),\n    .groups = \"drop\"\n  )\n\nbill_summary\n\n# A tibble: 3 × 4\n  species   avg_bill_length avg_bill_depth count\n  &lt;fct&gt;               &lt;dbl&gt;          &lt;dbl&gt; &lt;int&gt;\n1 Adelie               38.8           18.3   152\n2 Chinstrap            48.8           18.4    68\n3 Gentoo               47.5           15.0   124\n\n\nThese statistics allow us to compare the typical bill measurements across the three species."
+  },
+  {
+    "objectID": "posts/penguin-r/index.html#visualize-bill-measurements",
+    "href": "posts/penguin-r/index.html#visualize-bill-measurements",
+    "title": "Exploring Penguin Bill Measurements",
+    "section": "3. Visualize bill measurements",
+    "text": "3. Visualize bill measurements\nI create a scatter plot to investigate the relationship between bill length and bill depth. Each species is represented by a different colour.\n\npenguins_data |&gt;\n  ggplot(aes(\n    x = bill_length_mm,\n    y = bill_depth_mm,\n    colour = species\n  )) +\n  geom_point(alpha = 0.7, na.rm = TRUE) +\n  labs(\n    title = \"Penguin Bill Length vs Bill Depth\",\n    x = \"Bill length (mm)\",\n    y = \"Bill depth (mm)\",\n    colour = \"Species\"\n  ) +\n  theme_minimal()\n\n\n\n\n\n\n\nFigure 1: Relationship between bill length and bill depth across three penguin species.\n\n\n\n\n\nThe visualization helps identify differences in bill measurements between the species. It also shows how bill length and depth vary within each species."
+  },
+  {
+    "objectID": "posts/penguin-r/index.html#compare-average-bill-length",
+    "href": "posts/penguin-r/index.html#compare-average-bill-length",
+    "title": "Exploring Penguin Bill Measurements",
+    "section": "4. Compare average bill length",
+    "text": "4. Compare average bill length\nFinally, I arrange the species by their average bill length to identify differences between them.\n\nbill_ranking &lt;- bill_summary |&gt;\n  arrange(desc(avg_bill_length))\n\nbill_ranking\n\n# A tibble: 3 × 4\n  species   avg_bill_length avg_bill_depth count\n  &lt;fct&gt;               &lt;dbl&gt;          &lt;dbl&gt; &lt;int&gt;\n1 Chinstrap            48.8           18.4    68\n2 Gentoo               47.5           15.0   124\n3 Adelie               38.8           18.3   152\n\n\nThe resulting table orders the three species by average bill length, making it easier to compare their measurements."
+  },
+  {
+    "objectID": "posts/penguin-r/index.html#conclusion",
+    "href": "posts/penguin-r/index.html#conclusion",
+    "title": "Exploring Penguin Bill Measurements",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis analysis demonstrates how R can be used to summarize and visualize biological measurements.\nThe summary statistics and scatter plot reveal differences in bill morphology among the three penguin species. These differences illustrate how grouping, aggregation, and visualization can help explore patterns in real-world datasets."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in India and studied Computer Science at Bennett University. During my undergraduate years, I gravitated towards the intersection of technology, AI, and building things that people could actually use. Alongside my coursework, I spent a lot of time working on machine learning projects, experimenting with different applications of AI, and getting involved in student communities.\nBefore starting the MDS program, I worked at Interview Kickstart in the AI/ML space. My work there sat somewhere between technology, product development, and education, which gave me the chance to work with both technical problems and people. I particularly enjoyed working on AI-powered applications and figuring out how to turn fairly complex technical ideas into something useful and accessible."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in India and studied Computer Science at Bennett University. During my undergraduate years, I gravitated towards the intersection of technology, AI, and building things that people could actually use. Alongside my coursework, I spent a lot of time working on machine learning projects, experimenting with different applications of AI, and getting involved in student communities.\nBefore starting the MDS program, I worked at Interview Kickstart in the AI/ML space. My work there sat somewhere between technology, product development, and education, which gave me the chance to work with both technical problems and people. I particularly enjoyed working on AI-powered applications and figuring out how to turn fairly complex technical ideas into something useful and accessible."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why data science",
+    "text": "Why data science\nMy interest in data science grew from wanting to understand not just how models work, but how data can be used to make better decisions and solve problems in the real world. I have worked with machine learning and deep learning through projects and research, but I wanted a stronger foundation across statistics, data analysis, and the broader data science workflow.\nThat is what brought me to UBC’s Master of Data Science. I am particularly interested in the space where machine learning, AI, and practical problem-solving meet. I am hoping to use the program to become better at taking a problem from messy data all the way to a useful, well-reasoned solution."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of data science",
+    "text": "Outside of data science\nOutside of work and academics, I enjoy being around people and building communities. During university, I was involved in running a student technology club, which meant organising workshops, bringing people together, and occasionally figuring out how to make ambitious ideas happen with very limited resources.\nI also enjoy exploring new places, trying different food, and finding good coffee spots. Now that I am in Vancouver, I am looking forward to doing a lot more of that, whether it is exploring the city, discovering new trails, or simply finding a favourite neighbourhood spot. I am also a big fan of conversations that have absolutely nothing to do with data science."
   }
 ]
